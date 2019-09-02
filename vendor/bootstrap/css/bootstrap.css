@@ -10041,3 +10041,45 @@ body{
   background:url(https://scontent-sea1-1.cdninstagram.com/vp/69d9977dc96d975ac4b1473d6b9b2fdd/5DDF1691/t51.2885-19/s150x150/66717074_920525991635508_7153729435529641984_n.jpg?_nc_ht=scontent-sea1-1.cdninstagram.com);
   background-repeat: no-repeat;
 }
+/* Background img */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
