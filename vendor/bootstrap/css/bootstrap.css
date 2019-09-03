@@ -10037,49 +10037,58 @@ a.text-dark:hover, a.text-dark:focus {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 
-body{
-  background:url(https://scontent-sea1-1.cdninstagram.com/vp/69d9977dc96d975ac4b1473d6b9b2fdd/5DDF1691/t51.2885-19/s150x150/66717074_920525991635508_7153729435529641984_n.jpg?_nc_ht=scontent-sea1-1.cdninstagram.com);
-  background-repeat: no-repeat;
-}
 /* Background img */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
-}
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-}
-
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
   width: 100%;
-  padding: 20px;
+  overflow: hidden;
 }
 
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
-#myBtn:hover {
-  background: #ddd;
-  color: black;
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200%;
+  width: 200%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://media.giphy.com/media/J2h0E1Uqdvxl059men/giphy.gif') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+video{
+  height:562px;
+  width: 1100px;
+  padding-left: 500px;
 }
